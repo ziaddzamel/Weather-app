@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-family: "Work Sans", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background: rgb(196, 189, 189);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  height: 2px;
+}
+.scrollbar-container::-webkit-scrollbar {
+  background: transparent; /* Change the color to red */
+}
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-image: url("./assets/Background.jpg");
+  background-size: cover;
+}
+
+.section_p {
+  @apply px-[20px] sm:px-[60px] md:px-[120px];
+}
